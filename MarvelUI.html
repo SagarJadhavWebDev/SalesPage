@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marval UI</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+body{
+font-family:Poppins;
+}
+button:focus {
+border: none;
+outline: none;
+
+}
+button:hover{
+border: none;
+outline: none;
+}
+.g{
+text-align:left;
+content-align:left;
+items-align:left;
+float:left;
+}
+.an{
+margin-left:-15rem;
+line-height:2rem;
+}
+.mon{
+margin-left:14rem;
+margin-top:-2.3rem;
+}
+.tog{
+margin-top:-4.5rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 18px;
+}
+
+/* Hide default HTML checkbox */
+.switch input  {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e6e6e6;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 25px;
+  left: 1px;
+  bottom: -1.5px;
+  background-color: #1a75ff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #e6e6e6;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #e6e6e6;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.left{
+margin-left:3.5rem;
+line-height:4.2rem;
+font-size:2.5rem;
+}
+.lef{
+margin-left:2rem;
+font-weight: 50;
+}
+img{
+padding:0.7rem;
+height:7rem;
+width:7rem;
+margin-top:-8rem;
+}
+.w{
+width:14rem;
+}
+
+li {
+  list-style-type:none;
+  list-style-position: outside;
+  list-style-image: none;
+  margin-left:4rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th ,td{
+content-align: center;
+}
+.tr{
+background-color:#F8F8F8;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .left{
+  color:red;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+  .left{
+  color: black;
+  }
+  .left{
+  margin-left:8.5rem;
+  line-height:6.5rem;
+  font-size:5.5rem;
+  margin-top:5rem;
+  }
+  img{
+  padding:0.7rem;
+  height:25rem;
+  width:25rem;
+  margin-top:-25rem;
+  margin-right:2rem;
+  }
+  .lef{
+  margin-left:7rem;
+  font-weight: 50;
+  width:44rem;
+  }
+  .w{
+  width:18rem;
+  margin-left:9rem;
+
+  }
+  .sb{
+  margin-left:2rem;
+  }
+  .z{
+  height:30rem;
+  }
+  .tab{
+
+  height:45rem;
+  width:60%;
+  margin-right:28rem;
+  
+
+
+  }
+  li{
+  line-height:4rem;
+  }
+
+  .con{
+  width:35%;
+  }
+  .tabl{
+  float:left;
+  }
+  .con{
+  float: right;
+  margin-right:-1rem;
+    line-height:2.6rem;
+  }
+  .z{
+  position: absolute;
+  z-index:-1;
+  width:96%;
+  
+  }
+  .fif{
+  line-height:0.7rem;
+  color: lightgrey;
+  }
+  
+  .cardp{
+  text-align: left !important;
+  font-size:1.5rem !important;
+  }
+  .carp{
+  text-align:left !important;
+  font-size:2rem !important;
+  }
+  .serv{
+  text-align:left;
+  }
+  .ce{
+  margin-left:25%;
+  width:50%;
+  }
+  .sav{
+  height:17rem;
+  margin-top:-2rem;
+  align-content: center;
+  }
+  .ca{
+  margin-top:0.5rem;
+  font-size:1.5rem !important;
+  line-height:2.5rem;
+  }
+  .cap{
+  margin-top:1rem;
+  }
+  .head4{
+  font-size:1.7rem
+  }
+  .inner{
+  width:30%;
+  margin-left:7rem;
+  }
+  .cari{
+  margin-top:1rem;
+  height:17rem;
+  width:18rem;
+  border-radius:50%;
+  margin-left:20rem;
+
+  }
+  .slide{
+  margin-top:-18rem;
+  margin-left:7rem;
+  }
+  .indi{
+  margin-left:-32.5rem;
+ }
+  .test{
+  margin-left:3rem;
+  margin-top:-3rem;
+ 
+  }
+  .indi{
+  font-size:0.5rem;
+  justify-content:space-between;
+  }
+ 
+ .test2{
+ line-height:7rem;
+ }
+ .test5{
+ font-size:1rem;
+ line-height:1.5rem;
+ }
+ 
+ .last{
+ margin-left:22rem;
+ font-size:2.3rem;
+ 
+ }
+ .lastim{
+ margin-left:18rem;
+ margin-top:6rem;
+ height:25rem;
+ width:25rem;
+ }
+ .lasti{
+ position: absolute;
+ margin-left:-72.5rem;
+ line-height::0rem;
+z-index:1;
+width:35%;
+ margin-top:18rem !important;
+ }
+ .lastbtn{
+ margin-top:-4rem;
+ margin-left:-37rem;
+ width:17rem;
+ }
+
+}
+
+@media (min-width: 1281px) {
+  
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .left{
+  color:blue;
+  }
+  .left{
+  margin-left:3.5rem;
+  line-height:4.2rem;
+  font-size:2.5rem;
+  }
+  .lef{
+  margin-left:2rem;
+  font-weight: 50;
+  }
+  img{
+  padding:0.7rem;
+  height:7rem;
+  width:7rem;
+  margin-top:-8rem;
+  }
+  .w{
+  width:14rem;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .left{
+  margin-left:3.5rem;
+  line-height:4.2rem;
+  font-size:2.5rem;
+  }
+  .lef{
+  margin-left:2rem;
+  font-weight: 50;
+  }
+  img{
+  padding:0.7rem;
+  height:7rem;
+  width:7rem;
+  margin-top:-22rem;
+  margin-right:0.3rem;
+  }
+  .w{
+  width:14rem;
+  margin-left:3rem;
+  
+  }
+  .z{
+  height:30rem;
+  }
+  .tab{
+  position:;
+  height:40rem;
+
+
+  }
+  
+  li {
+  list-style-type:none;
+  list-style-position: outside;
+  list-style-image: none;
+  margin-left:1rem;
+  content-align:left;
+  line-height:4rem;
+  }
+  .con{
+  width:50%;
+  }
+  .tabl{
+  float:left;
+  }
+  .con{
+ 
+  float: right;
+  margin-right:2rem;
+  line-height:2.3rem;
+  }
+  .z{
+  position: absolute;
+  z-index:-1;
+  width:91%;
+
+  }
+  .ce{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+
+  padding: 10px;
+  }
+  .acc{
+  width:33%;
+  }
+  cardp{
+  font-size:1.5rem !important;
+  
+  }
+  .per{
+  margin-left:5rem;
+  margin-top:-3rem;
+  }
+  .mb{
+  width:23%;
+  }
+  .sav{
+padding:-8rem;
+  }
+  .head4{
+  font-size:1.5rem
+  }
+  .inner{
+  width:100%;
+  justify-content: center;
+  }
+  .indi{
+  margin-top:6rem;
+  }
+  .carim{
+  margin-top:-4rem;
+  height:8rem;
+  width:8rem;
+  border-radius:50%;
+  }
+  .inner{
+  width:90%;
+  margin-left:2rem;
+
+  }
+  .cari{
+  height:8rem;
+  width:8rem;
+  margin-top:-1rem;
+  margin-left:14rem;
+  border-radius:50%;
+  }
+  .test2{
+  line-height:1rem;
+  }
+  .test5{
+  font-size:1.5rem
+  line-height:2.5rem;
+  }
+  .last{
+  margin-left:2.7rem;
+  font-size:1.8rem;
+  
+  }
+  .lastim{
+  margin-left:2.5rem;
+  margin-top:-3rem;
+  height:9rem;
+  width:9rem;
+  }
+  .lasti{
+  margin-left:2.8rem;
+  width:80%;
+  line-height:2rem;
+  font-size:1.2rem;
+  }
+  .lastbtn{
+  margin-left:-42%;
+  width:15rem;
+  margin-top:-1rem;
+  }
+
+}
+</style>
+</head>
+<body class="w3-white">
+<br>
+<br>
+<div class="head">
+<label class="left"><b>Looking for a <br>lollipop alternative ?</b></label><br>
+
+<label class="w3-padding lef">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</label>
+</br>
+<button class="w3-button w3-hover-green w w3-border w3-border-blue w3-blue"><b>Primary CTA</b></button>
+<button class="w3-button w w3-hover-green w3-border w3-border-blue sb"><b>Secondary CTA</b></button>
+<div><img class="w3-right " src="https://www.flaticon.com/premium-icon/icons/svg/2143/2143138.svg"></div>
+</div>
+<br>
+<br>
+<br>
+<div class="w3-light-grey z w3-padding w3-margin w3-card">
+<center><h4 style="line-height:3rem;"><b>This is heading in <br> two lines</b></h4></center>
+</div>
+<br>
+<br>
+<br><br><br>
+<center>
+<div  class=" tab center w3-card w3-padding w3-margin w3-white" style="z-index:-1;">
+<div class=" tabl">
+<div class="lis">
+</br>
+<br>
+<li>Lorisum 1</li>
+<li>Lorisum 2</li>
+<li>Lorisum 3</li>
+<li>Lorisum 4</li>
+<li>Lorisum 5</li>
+<li>Lorisum 6</li>
+<li>Lorisum 7</li>
+<li>Lorisum 8</li>
+<li>Lorisum 9</li>
+
+</div>
+
+</div>
+
+<div  class="con  ">
+
+<table class="w3-table w3-small w3-centered"  style="background-color:#F8F8F8">
+    <tr class="tr">
+      <th>lollipop</th>
+      <th>icecandy</th>
+       </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+      <tr class="tr">
+      <td style="color:green;"><b>&#10003;</b></td>
+       <td style="color:red;"><b>&#10005;</b></td>
+      </tr>
+  </table>
+</div>
+
+</div>
+</center>
+
+<br><br>
+<center>
+<h4><b>Compare pricing today!</b></h4>
+<text>Lorem Ipsum is simply dummy text of the printing and <a class="w3-text-blue" href="#"><b>typesetting</b></a></text>
+</br>
+</br>
+<div class="w3-bar w3-white  "><b>
+<button id="b1" class=" mb bu25  w3-button w3-border w3-white w3-hover-white w3-hover-border-blue  w3-white w3-border w3-border-light-grey">25 serving</button>
+<button class="mb bu50 f w3-button w3-border w3-hover-white w3-hover-border-blue w3-white w3-border w3-border-light-grey">50 serving</button>
+<button class="mb bu100 h w3-button w3-hover-white w3-border w3-hover-border-blue w3-border-blue w3-white w3-border ">100 serving</button>
+<button class="mb bu200 t w3-button  w3-white w3-hover-white  w3-border w3-border-light-grey w3-hover-border-blue">200 serving</button></b>
+</br></br>
+</div>
+<br>
+<div class="w3-container an  " style="width:10rem">
+<label class="  w3-hover-white">Annual</br><b class="w3-text-grey" style="font-size:11px"> 50% off</b></label>
+</div>
+
+<div class="w3-container  tog " style="width:10rem">
+<label class="switch">
+  <input id="checkbox" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+
+</div>
+
+
+<div class="w3-container mon" style="width:10rem">
+<label class=" w3-hover-white"><b>Monthly</b></label>
+</div>
+<br><br>
+</center>
+
+<div class="w3-row ce  w3-round-xlarge w3-small " >
+
+
+  <div class=" acc w3-padding w3-third w3-card w3-container ">
+  <br>
+  <label class="cardp la w3-medium">lollipop</label><br><br>
+  <label class="carp lap w3-xlarge ">100$</label>
+  <i class="w3-tiny m w3-text-grey">/ month</i><br>
+  <label class="serv lape w3-text-grey">for 100 servings</label>
+   </div>
+  
+<div class=" acc w3-padding w3-third w3-card w3-container ">
+<br>
+<label class="cardp la2 w3-medium">lcecandy</label><br><br>
+<label class="carp lap2 w3-xlarge">200$</label>
+<i class="w3-tiny m w3-text-grey">/ month</i><br>
+<label class="serv lape2 w3-text-grey">for 100 servings</label>
+ </div>
+
+
+ <div class=" sav acc w3-padding w3-third w3-card w3-container "><br>
+  <label class="ca la3 w3-medium">your savings <br> with lollipop</label><br>
+ <label class="cap lape3 w3-xlarge w3-text-blue">100$</label><i class="w3-tiny m w3-text-grey"> / month</i><br>
+  </div>
+
+
+</div>
+<br>
+<br>
+<center>
+<br><br>
+<label><b class="head4">Here's what our customers have to say </b></label></center>
+
+<br>
+
+    <img class="cari " src="https://www.htmllion.com/img/tutorials/switching-img-17.jpg">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+
+  <!-- Wrapper for slides -->
+  <center>
+  <div class="carousel-inner inner">
+  
+    <div class=" w3-text-grey item active">
+
+      <b  class="w3-left w3-xlarge w3-text-blue">&#10077&nbsp;&nbsp;</b> 
+     <label class="test test5" align="left" style=""><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</i></label>
+     <br><br><br>
+     <h4 align="left" class=" test2 test w3-text-black" style=""><b>Raja Ram</b></h4>
+     <h5 align="left" class="test">Tip World</h5>
+    </div>
+    
+
+
+  </div>
+  <br><br><br>
+  <ol class="carousel-indicators w3-small w3-text-grey indi"><br>
+    <li  data-target="#myCarousel" data-slide-to="0" class="w3-blue  active"></li>
+    <li data-target="#myCarousel" data-slide-to="1" class="w3-grey "></li>
+    <li data-target="#myCarousel" data-slide-to="2" class="w3-grey "></li>
+  </ol>
+  
+  </center>
+
+ 
+<br>
+</div>
+<br>
+
+<label class="   last"><b>Loved by users,<br>recommend by experts</b></label>
+<img class="lastim " src="https://lh3.googleusercontent.com/-6siJut9WBh8/XrRziFJhiqI/AAAAAAAAAPM/-ax4Bbtc5SoW0568OKoFVf8Y1w0jrQgYACLcBGAsYHQ/h240/Group%2B4%2B%25281%2529.png">
+<label class="lasti  w3-text-grey"><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</i></label>
+<br><br><center><button  class="lastbtn w3-hover-green w3-button w3-blue w3-medium "> Primary CTA </button></center>
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$.fn.extend({
+    toggleText: function(a, b){
+        return this.text(this.text() == b ? a : b);
+    }
+});
+
+
+$(document).ready(function(){
+
+
+
+var data = 100;
+var check = false;
+
+
+console.log(data);
+
+
+
+
+$('#checkbox').change(function() {
+
+$('input[type="checkbox"]').is(function(){
+
+    if($(this).prop("checked") == true && data == 25){
+
+    $("").addclass("w3-border-blue");
+    $(".la").toggleText('lollipop' , 'lollipop');
+    $(".lap").text("$25");
+    $(".lape").text("for 25 serving");
+    $(".m").text("/ month")
+    $(".la2").text("lcecandy");
+    $(".lap2").text("$50");
+    $(".lape2").text("for 25 serving");
+    $(".lape3").text("$25 ");
+    }
+    else if($(this).prop("checked") == false && data == 25){
+    
+      $("#b1").addClass("w3-blue");
+      $(".la").toggleText('lollipop' , 'lollipop');
+      $(".lap").text("$150");
+      $(".lape").text("for 25  serving");
+      $(".m").text("/ year")
+      $(".la2").text("lcecandy");
+      $(".lap2").text("$300");
+      $(".lape2").text("for 25  serving");
+      $(".lape3").text("$150 ");
+
+    }
+    
+    else if($(this).prop("checked") == true && data == 50){
+    
+      $("#b1").addClass("w3-blue");
+      $(".la").toggleText('lollipop' , 'lollipop');
+      $(".lap").text("$50");
+      $(".lape").text("for 50  serving");
+      $(".m").text("/ month")
+      $(".la2").text("lcecandy");
+      $(".lap2").text("$100");
+      $(".lape2").text("for 50  serving");
+      $(".lape3").text("$50 ");
+    
+    }
+    
+    else if($(this).prop("checked") == false && data == 50){
+    
+      $("#b1").addClass("w3-blue");
+      $(".la").toggleText('lollipop' , 'lollipop');
+      $(".lap").text("$300");
+      $(".lape").text("for 50 serving");
+      $(".m").text("/ year")
+      $(".la2").text("lcecandy");
+      $(".lap2").text("$600");
+      $(".lape2").text("for 50 serving");
+      $(".lape3").text("$300 ");
+    
+    }
+    
+    else if($(this).prop("checked") == true && data == 100){
+    
+      $("#b1").addClass("w3-blue");
+      $(".la").toggleText('lollipop' , 'lollipop');
+      $(".lap").text("$100");
+      $(".lape").text("for 100 serving");
+      $(".m").text("/ month")
+      $(".la2").text("lcecandy");
+      $(".lap2").text("$200");
+      $(".lape2").text("for 100 serving");
+      $(".lape3").text("$100 ");
+    
+    }
+    
+    else if($(this).prop("checked") == false && data == 100){
+    
+      $("#b1").addClass("w3-blue");
+      $(".la").toggleText('lollipop' , 'lollipop');
+      $(".lap").text("$600");
+      $(".lape").text("for 100 serving");
+      $(".m").text("/ year")
+      $(".la2").text("lcecandy");
+      $(".lap2").text("$1200");
+      $(".lape2").text("for 100 serving");
+      $(".lape3").text("$600 ");
+    
+    }
+    
+    else if($(this).prop("checked") == true && data == 200){
+    
+      $("#b1").addClass("w3-blue");
+      $(".la").toggleText('lollipop' , 'lollipop');
+      $(".lap").text("$200");
+      $(".lape").text("for 200 serving");
+      $(".m").text("/ month")
+      $(".la2").text("lcecandy");
+      $(".lap2").text("$400");
+      $(".lape2").text("for 200 serving");
+      $(".lape3").text("$200 ");
+    
+    }
+    
+    else if($(this).prop("checked") == false && data == 200){
+    
+      $("#b1").addClass("w3-blue");
+      $(".la").toggleText('lollipop' , 'lollipop');
+      $(".lap").text("$1200");
+      $(".lape").text("for 200 serving");
+      $(".m").text("/ year")
+      $(".la2").text("lcecandy");
+      $(".lap2").text("$2400");
+      $(".lape2").text("for 200 serving");
+      $(".lape3").text("$1200 ");
+    
+    }
+    
+      });
+   });
+        
+        
+        
+        
+        
+
+$(".bu25").click(function(){
+$(".h").removeClass("w3-border-blue");
+$('#checkbox').prop('checked', true);
+$(".la").toggleText('lollipop' , 'lollipop');
+$(".lap").text("$25");
+$(".lape").text("for 25  serving");
+
+$(".la2").text("lcecandy");
+$(".lap2").text("$50");
+$(".lape2").text("for 25  serving");
+
+$(".lape3").text("$25 ");
+
+ data = 25;
+
+
+alert(data);
+
+});
+
+$(".bu50").click(function(){
+$(".h").removeClass("w3-border-blue");
+$('#checkbox').prop('checked', true);
+$(".la").toggleText('lollipop' , 'lollipop');
+$(".lap").text("$50");
+$(".lape").text("for 50  serving");
+
+$(".la2").text("lcecandy");
+$(".lap2").text("$100");
+$(".lape2").text("for 50  serving");
+
+$(".lape3").text("$50 ");
+
+data = 50;
+
+alert(data);
+
+
+});
+
+$(".bu100").click(function(){
+$(".h").removeClass("w3-border-blue");
+$('#checkbox').prop('checked', true);
+$(".la").toggleText('lollipop' , 'lollipop');
+$(".lap").text("$100");
+$(".lape").text("for 100  serving");
+
+$(".la2").text("lcecandy");
+$(".lap2").text("$200");
+$(".lape2").text("for 100  serving");
+
+$(".lape3").text("$100 ");
+
+data = 100;
+
+alert(data);
+
+
+});
+
+$(".bu200").click(function(){
+$(".h").removeClass("w3-border-blue");
+$('#checkbox').prop('checked', true);
+$(".la").toggleText('lollipop' , 'lollipop');
+$(".lap").text("$200");
+$(".lape").text("for 200  serving");
+
+$(".la2").text("lcecandy");
+$(".lap2").text("$400");
+$(".lape2").text("for 200  serving");
+
+$(".lape3").text("$200 ");
+
+data = 200;
+alert(data);
+
+
+});
+
+
+ 
+
+
+});
+
+
+
+
+
+</script>
+</body>
+</html>
